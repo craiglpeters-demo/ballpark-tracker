@@ -1,3 +1,5 @@
+var io = require("socket.io");
+var http = require("http");
 var fs = require('fs')
 var path = require('path');
 var express = require('express');
@@ -54,5 +56,7 @@ app.put('/api/update', (req, res) => {
 //configuring static assets (css/js)
 app.use(express.static('public'))
 
-app.listen(3000);
-if (!fs.existsSync(`${process.env.HOME}/.nodemon-running`)) console.log('Running at http://localhost:3000');
+var server = http.createServer(app);
+io(server);
+server.listen(3000);
+console.log('Running at http://localhost:3000');

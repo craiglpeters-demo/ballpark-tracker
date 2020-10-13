@@ -48,4 +48,8 @@
         <button id="myLocationBtn" title="My Location"></button>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/socket.io-client@2.3.0/dist/socket.io.slim.js"></script>
+<script>
+    io().on("disconnect", () => location.reload());
+</script>
 </html>
