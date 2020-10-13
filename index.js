@@ -6,12 +6,11 @@ var mongoClient = require('mongodb').MongoClient;
 var mongoUrl = 'mongodb://mongo:27017/';
 var mongoDb = 'ballparkTracker';
 var mongoCollection = 'parks';
+process.env.AZURE_MAPS_KEY = 'sn-FRUYg8GfYdJ5l21y-5TmReAvXJyBaioecJm4RdzM';
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 // app.use(express.json());
-
-// Hello!
 
 //main app page
 app.get('/', (req, res) => res.render('index', { AZURE_MAPS_KEY: process.env.AZURE_MAPS_KEY }));
@@ -30,7 +29,7 @@ app.get('/api/parks', (req, res) => {
   });
 });
 
-// update the visited bit in the db
+//update the visited bit in the db
 app.put('/api/update', (req, res) => {
   var body = req.body;
   if (!body) {
@@ -52,7 +51,7 @@ app.put('/api/update', (req, res) => {
   }
 });
 
-// Configuring static assets (css/js)
+//configuring static assets (css/js)
 app.use(express.static('public'))
 
 app.listen(3000);
