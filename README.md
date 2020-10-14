@@ -20,7 +20,7 @@ Contributions to this repository have been made easy! Simply click the "**Code >
 - [ ] **View the App**: Continue the debugging session by pressing `F5` again. The application will launch in a new tab.
 - [ ] **Make a Change**: Open `views/index.ejs`. Change the text on line 31 (`<span>Ball Park Tracker</span>`) and save the file. View the app, and it will have automatically updated to show your change.
 - [ ] **Try the Terminal**: Press ``Ctrl+Shift+` ``to open a new terminal window. Try entering commands like `node -v` or `uname` to interact with the codespace. If you setup a `dotfiles` repo, you should see your terminal setup fully intact. If you're using the sample dotefiles, then check out the awesome `PS1` prompt and/or try running `l` or `cls` (these are custom aliases!).
-- [ ] **Install an Extension**: Press `Ctrl+Shift+X` to open the Extensions bar. Search for `RandomFractalsInc.geo-data-viewer`, and press `Install`. Then, open the `public/data/ballparks.geojson` file. With the file open, press `F1` to open the command pallet, search for and run the `Geo: View Map` command to see the extension viualize the `.geojson` information in the file.
+- [ ] **Install an Extension**: Press `Ctrl+Shift+X` to open the Extensions bar. Search for `RandomFractalsInc.geo-data-viewer`, and press `Install`. Then, open the `public/data/ballparks.geojson` file. With the file open, press `F1` to open the command pallet, search for and run the `Geo: View Map` command to see the extension visualize the `.geojson` information in the file.
 
 ---
 
