@@ -8,7 +8,6 @@ var mongoClient = require('mongodb').MongoClient;
 var mongoUrl = 'mongodb://mongo:27017/';
 var mongoDb = 'ballparkTracker';
 var mongoCollection = 'parks';
-process.env.AZURE_MAPS_KEY = 'sn-FRUYg8GfYdJ5l21y-5TmReAvXJyBaioecJm4RdzM';
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
